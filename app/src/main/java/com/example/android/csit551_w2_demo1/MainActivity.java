@@ -17,12 +17,21 @@ public class MainActivity extends AppCompatActivity {
 
         textView = (TextView) findViewById(R.id.tv_1_act1);
         button=(Button)findViewById(R.id.btn_act1);
-        button.setOnClickListener(new View.OnClickListener(){
+        button.setOnClickListener(new MyLsnr());
+       /* button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 textView.setText("Some other text");
             }
-        });
+        });*/
+    }
+
+    class MyLsnr implements View.OnClickListener{
+
+        @Override
+        public  void onClick(View view){
+            textView.setText("New Text");
+        }
     }
 
 
