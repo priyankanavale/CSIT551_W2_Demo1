@@ -55,7 +55,8 @@
         android:layout_alignStart="@+id/button"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="17dp"
-        android:id="@+id/btn_act2" />
+        android:id="@+id/btn_act2"
+        android:onClick="mOnClick"/>
 
 
 </LinearLayout>
