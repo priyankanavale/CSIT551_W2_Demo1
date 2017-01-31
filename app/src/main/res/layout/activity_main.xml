@@ -43,7 +43,7 @@
         android:layout_alignStart="@+id/textView2"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="17dp"
-        android:id="@+id/btn_act1"
+        android:id="@+id/btn1_act1"
         android:onClick="mOnClick"/>
 
     <Button
@@ -55,7 +55,7 @@
         android:layout_alignStart="@+id/button"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="17dp"
-        android:id="@+id/btn_act2"
+        android:id="@+id/btn2_act2"
         android:onClick="mOnClick"/>
 
 

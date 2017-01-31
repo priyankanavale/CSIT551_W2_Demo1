@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         textView1 = (TextView) findViewById(R.id.tv_1_act1);
         textView2 = (TextView) findViewById(R.id.tv_2_act2);
-        findViewById(R.id.btn_act1).setOnClickListener(new MyLsnr());
+        findViewById(R.id.btn1_act1).setOnClickListener(new MyLsnr());
+        findViewById(R.id.btn2_act2).setOnClickListener(new MyLsnr());
         /*button=(Button)findViewById(R.id.btn_act1);
         button.setOnClickListener(new MyLsnr());*/
        /* button.setOnClickListener(new View.OnClickListener(){
@@ -32,14 +33,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void mOnClick(View view) {
-        textView2.setText("Clicked");
+        textView2.setText("Second Text");
     }
 
     class MyLsnr implements View.OnClickListener{
 
         @Override
         public  void onClick(View view){
-            textView1.setText("New Text");
+            if(view.getId()==R.id.btn1_act1)
+                textView1.setText("New Text 1");
+            else if(view.getId()==R.id.btn2_act2)
+                textView2.setText("New Text 2");
         }
     }
 
