@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("Some other text");
             }
         });*/
+
+
     }
 
     @Override
